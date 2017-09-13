@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_header_with_back"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="输入服务标准："
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/order_detail_eddesc"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:textSize="12sp"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="输入确认金额："
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/order_detail_edsum"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:textColor="@color/red"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:textSize="12sp"
+            android:hint="@string/ddhk_indent_edit" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_detail_sure"
+        android:layout_width="match_parent"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_order_selector"
+        android:layout_margin="20dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

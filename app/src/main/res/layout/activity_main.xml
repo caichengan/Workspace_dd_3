@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+   >
+
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_edit_input"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rgTools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/home_selector"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/ddhk_home_name"
+                android:textColor="@drawable/home_font_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rbIndent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/indent_selector"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/ddhk_statistics_name"
+                android:textColor="@drawable/home_font_selector"
+                android:textSize="12sp" />
+
+
+
+            <RadioButton
+                android:id="@+id/rbPerson"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/person_selector"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/ddhk_person_name"
+                android:textColor="@drawable/home_font_selector"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

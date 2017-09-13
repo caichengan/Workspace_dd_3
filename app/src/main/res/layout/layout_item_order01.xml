@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="120dp">
+
+        <com.diandianguanjia.workspace_dd_3.view.CircleImageView
+            android:layout_width="50dp"
+            android:id="@+id/orderCircleImg"
+            android:src="@drawable/ddhk_avatar"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/service_code"
+            android:layout_toRightOf="@id/orderCircleImg"
+            android:text="公司代号"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/service_company"
+            android:layout_below="@id/service_code"
+            android:layout_toRightOf="@id/orderCircleImg"
+            android:text="公司名称"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_below="@id/service_company"
+            android:layout_toRightOf="@id/orderCircleImg"
+            android:text="联系人："
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/service_phone"
+            android:layout_below="@id/service_company"
+            android:layout_toRightOf="@id/service_name"
+            android:text="电话：13531829360"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/service_address"
+            android:layout_below="@id/service_name"
+            android:layout_toRightOf="@id/orderCircleImg"
+            android:text="地址：会受到官方私人飞机开个会看人家额空间打飞机过来看风景会计师赶紧回家"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

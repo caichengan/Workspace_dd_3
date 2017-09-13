@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_with_back"/>
+
+
+
+    <com.diandianguanjia.workspace_dd_3.view.MyScrollView01
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/order_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="服务项目：安装冰箱" />
+
+                    <TextView
+                        android:id="@+id/order_detail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center_vertical"
+                        android:text="已完成"
+                        android:textColor="@color/red" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/qianhui" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/order_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/ddhk_indent_indentTime" />
+
+                    <TextView
+                        android:id="@+id/order_detail_time01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/order_detail_time"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip">
+
+                <TextView
+                    android:id="@+id/order_detail_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="用户名：" />
+
+                <TextView
+                    android:id="@+id/order_detail_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoLink="phone"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="联系电话：13531829360" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:drawablePadding="10dip">
+
+                <TextView
+                    android:id="@+id/order_detail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ddhk_home_address"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="服务地址" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <RelativeLayout
+                    android:id="@+id/order_detail_rlservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/order_detail_servies01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="创客" />
+
+                    <TextView
+                        android:id="@+id/order_detail_servies02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dip"
+                        android:layout_toEndOf="@+id/order_detail_servies01"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue" />
+
+                    <ImageView
+                        android:layout_width="8dip"
+                        android:layout_height="15dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/base_title_arrow_right"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/order_detail_serviephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/order_detail_serviestype01"
+                        android:autoLink="phone"
+                        android:gravity="center_vertical"
+                        android:text="创客电话：" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/qianhui" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/order_detail_serviestype01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/ddhk_indent_serverType2" />
+
+                    <TextView
+                        android:id="@+id/order_detail_serviestype02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dip"
+
+                        android:layout_toEndOf="@+id/order_detail_serviestype01"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/ddhk_indent_servedetails" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/qianhui" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip">
+
+                        <TextView
+                            android:id="@+id/order_detail_RequireDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/ddhk_indent_DetailsRequireDescription" />
+
+                        <TextView
+                            android:id="@+id/order_detail_RequireDescription01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dip"
+                            android:layout_toEndOf="@+id/order_detail_RequireDescription"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/darkgray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/order_detail_NormDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/ddhk_indent_DetailsNormDescription" />
+
+
+                        <TextView
+                            android:id="@+id/order_detail_NormDescription01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dip"
+                            android:layout_toEndOf="@+id/order_detail_NormDescription"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/darkgray" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/qianhui" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/order_detail_serviessum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center_vertical|end"
+                        android:text="@string/ddhk_indent_indentsum1" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/order_btn_sure_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_order_selector"
+                    android:padding="2dp"
+                    android:text="@string/ddhk_indent_btn_sure"
+                    android:textColor="@color/white"
+
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.diandianguanjia.workspace_dd_3.view.MyScrollView01>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lin_order"
+        android:visibility="gone"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/order_detail_assign"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_order_selector"
+            android:text="指派"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/order_detail_self"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="承接"
+            android:background="@drawable/btn_order_selector"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/order_detail_canncel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="取消"
+        android:background="@drawable/btn_order_selector"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

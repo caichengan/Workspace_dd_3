@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/purple_button"
+    android:paddingTop="5dip" >
+
+    <View
+        android:id="@+id/header_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgcolor"
+        android:paddingTop="10dip" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="100.0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/header_back_bg"
+        android:drawableLeft="@drawable/ddhk_header_back"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dip"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:maxLength="8"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/bt_header_right"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text=""
+        android:layout_alignTop="@+id/tv_header"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

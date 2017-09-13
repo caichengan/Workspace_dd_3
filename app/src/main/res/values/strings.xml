@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Workspace_dd_3</string>
+
+    <string name="ddhk_person_name">我的</string>
+    <string name="ddhk_find_name">发现</string>
+    <string name="ddhk_shoppcart_name">购物车</string>
+    <string name="ddhk_indent_name">订单</string>
+    <string name="ddhk_statistics_name">统计</string>
+    <string name="ddhk_home_name">首页</string>
+    <string name="ddhk_header_back">返回</string>
+    <string name="ddhk_header_address">中山市</string>
+
+
+    <string name="ddhk_indent_services">服务商</string>
+    <string name="ddhk_indent_services1">服务商：</string>
+
+    <string name="ddhk_indent_serverType1">服务类型：</string>
+    <string name="ddhk_indent_serverType2">服务商类型：</string>
+    <string name="ddhk_services_indent">立刻下单</string>
+    <string name="ddhk_services_colligationScore">综合评分</string>
+    <string name="ddhk_name">点点管家888服务点</string>
+
+    <string name="ddhk_find_list_title">点点官家，泛家居行业独角兽</string>
+    <string name="ddhk_indent_servedetails">服务详情</string>
+    <string name="ddhk_indent_serveprice">服务价格</string>
+    <string name="ddhk_indent_serveitem">服务项目</string>
+    <string name="ddhk_indent_charge">收费</string>
+    <string name="ddhk_indent_problemDescription">问题描述</string>
+    <string name="ddhk_indent_DetailsproblemDescription">填写详细问题描述</string>
+    <string name="ddhk_indent_DetailsRequireDescription">用户需求：</string>
+    <string name="ddhk_indent_DetailsNormDescription">服务标准：</string>
+    <string name="ddhk_indent_indentTime">下单时间：</string>
+    <string name="ddhk_indent_indentTime1">2017-05-17 16:47</string>
+    <string name="ddhk_indent_indentCancle">订单已被取消</string>
+    <string name="ddhk_indent_edit"> （元）  </string>
+    <string name="ddhk_indent_btn_sure">确认金额跟服务标准</string>
+    <string name="ddhk_indent_indentsum1">订单金额计算中</string>
+    <string name="ddhk_indent_lookComment">查看评论</string>
+    <string name="ddhk_indent_indentsum">订单金额</string>
+
+    <!--保留两位数字-->
+    <string name="heji_yuan">¥ %1$.2f</string>
+
+    <!-- 登录 -->
+    <string name="ddhk_Login_userLogin">用户登录</string>
+    <string name="ddhk_Login_login">登录</string>
+    <string name="ddhk_Login_account">帐号</string>
+    <string name="ddhk_Login_password">密码</string>
+    <string name="ddhk_Login_phone">用户名/手机号</string>
+    <string name="ddhk_Login_inputpwd">请输入密码</string>
+    <string name="ddhk_Login_forgetpwd">忘记密码？</string>
+    <string name="ddhk_Login_noaccount">还没帐号，马上去</string>
+    <string name="ddhk_Login_register">注册</string>
+    <string name="ddhk_Login_fasterLogin">快捷登录方式</string>
+    <!-- 忘记密码 -->
+    <string name="ddhk_forgetPwd_reset">重置密码</string>
+    <string name="ddhk_forgetPwd_inputPhone">请输入手机号</string>
+    <string name="ddhk_forgetPwd_inputVcode">请输入验证码</string>
+    <string name="ddhk_forgetPwd_getVcode">获取短信验证码</string>
+    <string name="ddhk_forgetPwd_inputPwd">请输入6-12位登录密码</string>
+    <string name="ddhk_forgetPwd_finishLogin">完成并登录</string>
+
+</resources>
